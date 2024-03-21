@@ -48,6 +48,7 @@ TARGET_USES_UEFI := true
 TARGET_SCREEN_DENSITY := 300
 
 # Kernel
+BOARD_BOOT_HEADER_NAME := SRPUE06B010
 BOARD_BOOTIMG_HEADER_VERSION := 2
 BOARD_KERNEL_BASE := 0x10000000
 BOARD_KERNEL_CMDLINE := androidboot.hardware=exynos850 androidboot.selinux=enforce loop.max_part=7
