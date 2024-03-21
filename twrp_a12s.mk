@@ -18,12 +18,17 @@ $(call inherit-product, vendor/twrp/config/common.mk)
 # Inherit from a12s device
 $(call inherit-product, device/samsung/a12s/device.mk)
 
+# Charger
+PRODUCT_PACKAGES += \
+    charger_res_images
+
+PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,$(DEVICE_PATH)/recovery/root,recovery/root)
+
 PRODUCT_DEVICE := a12s
 PRODUCT_NAME := twrp_a12s
 PRODUCT_BRAND := samsung
 PRODUCT_MODEL := SM-A127f
 PRODUCT_MANUFACTURER := samsung
-
 PRODUCT_GMS_CLIENTID_BASE := android-samsung-ss
 
 PRODUCT_BUILD_PROP_OVERRIDES += \

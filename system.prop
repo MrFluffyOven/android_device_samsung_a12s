@@ -1,13 +1,8 @@
-ro.arch=exynos850
-ro.kernel.qemu=0
-ro.kernel.qemu.gles=2
-persist.demo.hdmirotationlock=false
-#Enable S.LSI USB settings
-dev.usbsetting.embedded=on
-#for DTV FullSeg SD Recording..
-oneseg.extSdCard.path=/storage/extSdCard
-#Enable csc for vendor image
-ro.vendor.cscsupported=1
-#Cmc properties
-ro.cmc.device_type=pd
-ro.cmc.version=2.0
+ro.display.series=Galaxy A12 Nacho
+ro.product.board=exynos850
+ro.board.platform=
+sys.usb.controller=13600000.dwc3
+ro.boot.usbcontroller=13600000.dwc3
+ro.boot.dynamic_partitions=true
+#fbe.metadata.wrappedkey=true
+ro.boot.boot_devices=12100000.dwmmc0
