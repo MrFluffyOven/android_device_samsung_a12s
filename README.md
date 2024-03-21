@@ -7,7 +7,7 @@
 ## Sync
     repo sync -c -j$(nproc --all) --force-sync --no-clone-bundle --no-tags
 ## Clone twrp tree
-    git clone https://github.com/MrFluffyOven/android_device_samsung_a12s -b twrp-11 device/samsung/a12s
+    git clone https://github.com/MrFluffyOven/android_device_samsung_a12s -b twrp-12.1 device/samsung/a12s
 ## build:
     export ALLOW_MISSING_DEPENDENCIES=true; . build/envsetup.sh; lunch twrp_a12s-eng; mka recoveryimage
 ## Multidisabler
